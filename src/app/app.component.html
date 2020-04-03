@@ -1,0 +1,6 @@
+<select [(ngModel)]="selected" name="status" placeholder="select" (ngModelChange)="onOptionsSelected()">
+  <option *ngFor="let sta of status" [ngValue]="sta">{{sta}}</option>
+</select>
+<div>
+{{filtered|json}}
+</div>
